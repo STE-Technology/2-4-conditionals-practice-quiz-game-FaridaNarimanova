@@ -33,10 +33,10 @@ print("2. Where is Azerbaijan located?")
 print("(a) In Europe")
 print("(b) Next to Mexico")
 print("(c) In the region of the southern Caucasus Mountains.")
-right_answer = "c"
+correct_answer = "c"
 user_answer = input("My answer is: ")
 
-if user_answer == right_answer:
+if user_answer == correct_answer:
     print("Correct!")
     score = score + 1
 else:  
@@ -46,16 +46,15 @@ print("3. What is the common religion in Azerbaijan?")
 print("(a) Christianity")
 print("(b) Islam")
 print("(c) Judaism")
-true_answer = "b" 
+correct_answer = "b" 
 user_answer = input("My answer is: ")
 
-
-if user_answer == true_answer:
+if user_answer == correct_answer:
     print("Correct!")
     score = score + 1
 else:
     print("Wrong.")
 
-
 print("Quiz is completed!")
-print("You answered " + str(score)  +   " out of 3 questions correctly. So, your score is " + str(score) + ".")
+scores = round(score / 3) * 100
+print("You answered " + str(score)  +   " out of 3 questions correctly. So, your score is " + str(scores) + "%")
